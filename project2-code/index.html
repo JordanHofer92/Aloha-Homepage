@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link 
+    rel="stylesheet" 
+    href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Aloha!</title>
 </head>
 <body>
@@ -11,41 +14,107 @@
         <img class="aloha-logo" src="images/aloha-logo.svg"></img>
         <img class="cart-icon" src="images/cart-icon.svg" alt="What's in your cart?"></img>
     </div>
-    <div class="pagenav">
-        <ul class="pagelinks">
+    <div class="page-nav">
+        <ul class="page-links">
             <li>ABOUT</li>
             <li>SHOP</li>
             <li>FEATURED</li>
             <li>UPDATES</li>
         </ul>
     </div>
-    <div class="pagecontain">
+    <div class="page-container">
         <div class="hero">
-            <!-- <h1>NEW COLLECTION</h1>
-            <h2>Spring/Summer <br>2016</h2> -->
-            <img class="bangirl" src="images/banner-girl.png" alt="">
-            <img class="banbkgd" src="images/flower-bkgd.jpg" alt="">
+            <h1>NEW COLLECTION</h1>
+            <h2>Spring/Summer <br>2016</h2>
+            <img class="banner-girl" src="images/banner-girl.png" alt="">
+            <img class="banner-bkgd" src="images/flower-bkgd.jpg" alt="">
         </div>
-        <div class="detail-con">
-            <h2> <em> Hand-Crafted</em> Styles</h2>
-                <p>Aloha Apparel Co sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below!</p>
+        <div class="detail-container">
+            <h2>
+                <span class ="italics">
+                    Hand-Crafted 
+                </span>
+                <span class="bold">
+                    Styles
+                </span>
+            </h2>
+                <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
         </div>
-        <div class="shopcat">
-            <img class ="mens" src="images/mens-category.jpg" alt="">
-            <img class="trends" src="images/trends-category.jpg" alt="">
-            <img class="glasses" src="images/glasses-category.jpg" alt="">
-            <img class="sales" src="images/sale-category.jpg" alt="">
-            <img class="bags" src="images/bags-category.jpg" alt="">
-            <img class="womens" src="images/womens-category.jpg" alt="">
+        <div class="shop-categories">
+            <div class="mens">
+                <img src="images/mens-category.jpg" alt="">
+                <h2>MEN'S</h2>
+            </div>
+            <div class="trends">
+                <img src="images/trends-category.jpg" alt="">
+                <h2>TRENDS</h2>
+            </div>
+            <div class="glasses">
+                <img src="images/glasses-category.jpg" alt="">
+                <h2>GLASSES</h2>
+            </div>
+            <div class="sales">
+                <img src="images/sale-category.jpg" alt="">
+                <h2>SALE</h2>
+            </div>
+            <div class="bags">
+                <img src="images/bags-category.jpg" alt="">
+                <h2>BAGS</h2>
+            </div>
+            <div class="womens">
+                <img src="images/womens-category.jpg" alt="">
+                <h2>WOMEN'S</h2>
+            </div>
         </div>
-        <div class="shopfeat">
-            <h2>Most-Loved Products</h2>
+        <div class="shop-features">
+            <h1><span class="italics">
+                Most-Loved 
+            </span>
+            <span class="bold">
+                Products
+            </span>
+            </h1>
+            <img src="images/checked-stretch-dress.jpg" alt="">
+            <p>DRESSES</p>
+            <h2>Checked Stretch Dress</h2>
+            <p>$129.00</p>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
+            <span class="carousel-marker"></span>
         </div>
-        <div class="signup">
-            <h2>Sign-up for updates</h2>
+        <div class="sign-up">
+            <h2><span class ="italics">
+                Sign-up for 
+            </span> 
+                <span class="bold">
+                    updates
+                </span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            <form action="subscribe">
+                <input type="text" placeholder="Your Email" name="eSub" required>
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="footer">
+            <p> &copy 2016 Aloha Apparel Co. <br>Powered by HTML and CSS</p>
+            <p>604-604-6040 <a href="">
+                info@alohaapparel.com
+            </a>
+            </p>
+            <p class="address">1490 W Broadway <br>Vancouver, BC, Canada</p>
+            <div class="socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-google-plus"></a>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
