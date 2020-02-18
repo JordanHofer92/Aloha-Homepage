@@ -1,0 +1,13 @@
+# ignore sample layouts
+**/layouts
+# ignore sample fonts
+**/fonts
+# ignore sample images
+**/images
+# ignore caches
+**.DS_Store
+**.
+**..
+**/.DS_Store
+**/.
+**/..

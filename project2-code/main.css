@@ -1,0 +1,562 @@
+@font-face {
+    font-family: 'Raleway-medium';
+    src: url(./fonts/Raleway-Medium.ttf);
+
+}
+
+@font-face {
+    font-family: 'Raleway-mediumitalic';
+    src: url(./fonts/Raleway-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway-light';
+    src: url(./fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway-lightitalic';
+    src: url(./fonts/Raleway-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair-reg';
+    src: url(./fonts/PlayfairDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Playfair-ital';
+    src: url(./fonts/PlayfairDisplay-Italic.otf);
+}
+
+@font-face {
+    font-family: 'Playfair-bold';
+    src: url(./fonts/PlayfairDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Playfair-bolit';
+    src: url(./fonts/PlayfairDisplay-BoldItalic.otf);
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .5em;
+    border-bottom: .05rem solid lightgrey;
+}
+
+.aloha-logo {
+    width: 30%;
+    padding: .5rem;
+}
+
+.cart-icon {
+    width: 3em;
+    padding: .5em;
+    margin-left: 8em;
+}
+
+.page-nav {
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.page-links {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    margin-top: 0.5em;
+    list-style: none;
+    font-size: 14px;
+    font-family: 'Raleway-medium';
+}
+
+.page-links a {
+    color: #e2574c;
+    text-decoration: none;
+}
+
+.page-links a:hover {
+    color: #b64036;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+.page-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "summer-ad"
+                         "details"
+                         "shop-cat"
+                         "shop-feat"
+                         "sign"
+                         "footer";
+    grid-template-rows: .75fr .05fr 1fr .75fr .35fr .35fr;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    width: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    place-items: center;
+}
+
+.banner-bkgd {
+    grid-area: summer-ad;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.7);
+    object-fit: cover;
+}
+
+.banner-girl {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    object-fit: contain;
+    z-index: 2;
+    filter: brightness(0.8);
+    margin-top: 7em;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 43%;
+    font-size: 19px;
+    font-family: 'Raleway-medium';
+    color: white;
+    z-index: 3;
+}
+
+.hero h2{
+    position: absolute;
+    top: 50%;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Playfair-reg';
+    font-weight: lighter;
+    color: white;
+    z-index: 3;
+}
+
+.detail-container {
+    grid-area: details;
+    text-align: center;
+    height: 300px;
+    background: white;
+    z-index: 4;
+    font-size: 23px;
+}
+
+.detail-container h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+.italics {
+    font-family: 'Playfair-ital';
+    color: #2d2d2d;
+    font-weight: lighter;
+}
+
+.bold {
+    font-family: 'Playfair-bold';
+    color: #2d2d2d;
+    font-weight: lighter;
+
+}
+
+.detail-container p {
+    font-family: 'Raleway-light';
+    font-size: 16px;
+    color: #2d2d2d;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 2em;
+}
+
+.shop-categories {
+    grid-area: shop-cat;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "mens mens"
+    "trends glasses"
+    "sales bags"
+    "womens womens";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em;
+
+}
+
+.mens {
+    grid-area: mens;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mens h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 25%;
+    color: white;
+}
+
+.trends {
+    grid-area: trends;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.trends h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 50%;
+    color: white;
+}
+
+.glasses {
+    grid-area: glasses;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.glasses h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 50%;
+    color: white;
+}
+
+.sales {
+    grid-area: sales;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sales h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 50%;
+    color: white;
+}
+
+.bags {
+    grid-area: bags;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.bags h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 50%;
+    color: white;
+}
+
+.womens {
+    grid-area: womens;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.womens h2 {
+    position: absolute;
+    font-family: 'Raleway-medium';
+    font-weight: lighter;
+    margin-top: 25%;
+    color: white;
+}
+
+.shop-categories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.7);
+}
+
+.shop-categories div:hover h2 {
+    color:  #b64036;
+    transition: ease-in .2s;
+}
+
+.shop-carousel {
+    grid-area: shop-feat;
+    text-align: center;
+}
+
+.shop-features {
+    padding-bottom: 10%;
+}
+
+.shop-carousel h1 {
+    font-size: 3em;
+    margin-top: 15%;
+}
+
+.shop-carousel h2 {
+    font-family: 'Playfair-reg';
+    color: #e2574c;
+}
+
+.shop-carousel p {
+    font-family: 'Raleway-medium';
+    color: #969696;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.backpack {
+    display: none;
+}
+
+.denim-shorts {
+    display: none;
+}
+
+.dotted-dress{
+    display: none;
+}
+
+.carousel-marker {
+    height: 10px;
+    width: 10px;
+    margin-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background-color: #969696;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.sign-up {
+    font-size: 20px;
+    background-image: url(images/wave-bkgd.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: sign;
+    text-align: center;
+}
+
+.sign-up .italics {
+    color: black;
+}
+
+.sign-up .bold {
+    color: black;
+}
+
+.sign-up p {
+    color: black;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    place-self: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+input {
+    flex-grow: 2;
+    width: 100%;
+    margin-left: 2em;
+    height: 3em;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    font-size: 14px;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    background: #e2574c;
+}
+
+.footer {
+    grid-area: footer;
+    background: #242424;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    font-size: 1.25em;
+    margin-top: 2em;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: #b64036;
+    text-decoration: none;
+    transition: ease-in .2s;
+}
+
+.address {
+    color: #969696;
+    margin-bottom: 2em;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.35em;
+    margin-bottom: 2em;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #b64036;
+    text-decoration: none;
+    transition: ease-in .2s;
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .aloha-logo {
+        width: 10%;
+        padding: 1em;
+        margin-left: 2em;
+    }
+    
+    .cart-icon {
+        width: 30%;
+        padding: 1em;
+        /* margin-left: 2em; */
+    }
+
+    .hero h1 {
+        top: 40%;
+        font-size: 2em;
+    }
+    
+    .hero h2{
+        font-size: 5em;
+    }
+
+    .detail-container h2 {
+        margin-top: 1em;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 2em;
+    }
+
+    .detail-container p {
+        margin-left: 27%;
+        margin-right: 27%;
+        font-size: 17px;
+    }
+
+    .shop-categories {
+        grid-area: shop-cat;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "mens mens trends glasses"
+        "sales bags womens womens";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: .5em;
+    
+    }
+
+    .shop-categories h2{
+        font-size: 3em;
+    }
+
+    .shop-carousel h1 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .backpack {
+        display: block;
+    }
+    
+    .denim-shorts {
+        display: block;
+    }
+    
+    .dotted-dress{
+        display: block;
+    }
+
+    .carousel-marker {
+        margin-bottom: 3em;
+    }
+
+    .sign-up h2{
+        font-size: 2em;
+    }
+    
+    .sign-up p {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    form {
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-bottom: 1em;
+    }
+
+}
