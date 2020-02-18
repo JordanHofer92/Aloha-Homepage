@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link 
-    rel="stylesheet" 
-    href="main.css">
+    rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Aloha!</title>
 </head>
 <body>
     <div class="brand">
-        <img class="aloha-logo" src="images/aloha-logo.svg"></img>
-        <img class="cart-icon" src="images/cart-icon.svg" alt="What's in your cart?"></img>
+        <img class="aloha-logo" src="images/aloha-logo.svg" alt="Aloha Brand">
+            <a href=""><img class="cart-icon" src="images/cart-icon.svg" alt="What's in your cart?"></a>
     </div>
     <div class="page-nav">
         <ul class="page-links">
-            <li>ABOUT</li>
-            <li>SHOP</li>
-            <li>FEATURED</li>
-            <li>UPDATES</li>
+            <a href="#about"><li>ABOUT</li></a> 
+            <a href="#shop"><li>SHOP</li></a>
+            <a href="#featured"><li>FEATURED</li></a>
+            <a href="#signup"><li>UPDATES</li></a>
         </ul>
     </div>
     <div class="page-container">
         <div class="hero">
             <h1>NEW COLLECTION</h1>
-            <h2>Spring/Summer <br>2016</h2>
+            <h2>Spring/Summer 2016</h2>
             <img class="banner-girl" src="images/banner-girl.png" alt="">
             <img class="banner-bkgd" src="images/flower-bkgd.jpg" alt="">
         </div>
-        <div class="detail-container">
+        <div class="detail-container" id="about">
             <h2>
                 <span class ="italics">
                     Hand-Crafted 
@@ -40,44 +39,78 @@
             </h2>
                 <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
         </div>
-        <div class="shop-categories">
+        <div class="shop-categories" id="shop">
             <div class="mens">
-                <img src="images/mens-category.jpg" alt="">
+                <a href="">
+                    <img src="images/mens-category.jpg" alt="">
+                </a>
                 <h2>MEN'S</h2>
             </div>
             <div class="trends">
-                <img src="images/trends-category.jpg" alt="">
+                <a href="">
+                    <img src="images/trends-category.jpg" alt="">
+                </a>
                 <h2>TRENDS</h2>
             </div>
             <div class="glasses">
-                <img src="images/glasses-category.jpg" alt="">
+                <a href="">
+                    <img src="images/glasses-category.jpg" alt="">
+                </a>
                 <h2>GLASSES</h2>
             </div>
             <div class="sales">
-                <img src="images/sale-category.jpg" alt="">
+                <a href="">
+                    <img src="images/sale-category.jpg" alt="">
+                </a>
                 <h2>SALE</h2>
             </div>
             <div class="bags">
-                <img src="images/bags-category.jpg" alt="">
-                <h2>BAGS</h2>
-            </div>
+                <a href="">
+                    <img src="images/bags-category.jpg" alt="">
+                </a>
+                    <h2>BAGS</h2>
+                </div>
             <div class="womens">
-                <img src="images/womens-category.jpg" alt="">
+                <a href="">
+                    <img src="images/womens-category.jpg" alt="">
+                </a>
                 <h2>WOMEN'S</h2>
             </div>
         </div>
-        <div class="shop-features">
-            <h1><span class="italics">
-                Most-Loved 
-            </span>
-            <span class="bold">
-                Products
-            </span>
+        <div class="shop-carousel" id="featured">
+                <h1><span class="italics">
+                    Most-Loved 
+                </span>
+                <span class="bold">
+                    Products
+                </span>
             </h1>
-            <img src="images/checked-stretch-dress.jpg" alt="">
-            <p>DRESSES</p>
-            <h2>Checked Stretch Dress</h2>
-            <p>$129.00</p>
+            <div class="carousel">
+                <div class="stretch-dress">
+                    <img src="images/checked-stretch-dress.jpg" alt="">
+                    <p>DRESSES</p>
+                    <h2>Checked     Stretch Dress</h2>
+                    <p>$129.00</p>
+                </div>
+                <div class="backpack">
+                    <img src="images/blue-hipster-backpack.jpg" alt="A blue backpack">
+                    <p>BAGS</p>
+                    <h2>Blue Hipster Backpack</h2>
+                    <p>$69.00</p>
+                </div>
+                <div class="denim-shorts">
+                    <img src="images/demin-overall-shorts.jpg" alt="Overall shorts made of denim">
+                    <p>DENIM</p>
+                    <h2>Denim Overall Shorts</h2>
+                    <p>$89.00</p>
+                </div>
+                <div class="dotted-dress">
+                <img src="images/pink-dotted-dress.jpg" alt="A pink dotted dress">
+                <p>DRESSES</p>
+                <h2>Pink Dotted Dress</h2>
+                <p>$99.00</p>
+                </div>
+            </div>  
             <span class="carousel-marker"></span>
             <span class="carousel-marker"></span>
             <span class="carousel-marker"></span>
@@ -87,7 +120,7 @@
             <span class="carousel-marker"></span>
             <span class="carousel-marker"></span>
         </div>
-        <div class="sign-up">
+        <div class="sign-up" id="signup">
             <h2><span class ="italics">
                 Sign-up for 
             </span> 
@@ -101,12 +134,14 @@
             </form>
         </div>
         <div class="footer">
-            <p> &copy 2016 Aloha Apparel Co. <br>Powered by HTML and CSS</p>
-            <p>604-604-6040 <a href="">
-                info@alohaapparel.com
-            </a>
+            <div class="contact-info">
+                <p> &copy; 2016 Aloha Apparel Co. Powered by HTML and CSS</p>
+                <p>604-604-6040 <a href="">
+                    info@alohaapparel.com
+                </a>
             </p>
             <p class="address">1490 W Broadway <br>Vancouver, BC, Canada</p>
+            </div>
             <div class="socials">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
